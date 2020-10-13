@@ -1,0 +1,14 @@
+{% extends 'home.html' %}
+
+{% block content%}
+    {% for tweet in tweets %}
+        <div class ="ui cards">
+            <div class ="card">
+                <div class ="content">
+                    <div class ="header">{{ tweet.author }}</div>
+                    <div class ="description">{{ tweet.text }}</li></div>
+                </div>
+            </div>
+        </div>
+    {% endfor %}
+{% endblock %}
